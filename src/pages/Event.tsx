@@ -19,7 +19,7 @@ export function Event() {
           <Icon  />
         </div>
         </div>}
-       <div className='block 2xl:block xl:block lg: hidden md: hidden sm: hidden'>
+       <div className=' bg-gray-700 border-l border-gray-600  block 2xl:block xl:block lg: hidden md: hidden sm: hidden '>
       <Sidebar />
       </div>
     </main>

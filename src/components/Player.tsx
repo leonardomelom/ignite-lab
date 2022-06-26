@@ -8,6 +8,7 @@ interface VideoProps{
 }
 
 export function PlayerVideo({lessonSlug}: VideoProps){
+
   const { data } = useGetLessonBySlugQuery({
     variables:{
       slug:lessonSlug,
@@ -17,6 +18,7 @@ export function PlayerVideo({lessonSlug}: VideoProps){
     return <div className='flex-1 flex items-center justify-center'><span><CircleNotch size={120}  className="animate-spin"/></span></div>
   }
   return ( 
+   
   <div className="flex-1">
     <div>
     <div className="bg-black flex justify-center">
