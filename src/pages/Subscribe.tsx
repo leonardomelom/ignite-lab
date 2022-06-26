@@ -24,7 +24,7 @@ export function Subscribe() {
   }
   return (
     <div className='min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center'>
-      <div className='w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto'>
+      <div className='w-full max-w-[1100px] flex flex-col items-center justify-between mt-20 mx-auto xl:flex-row lg:flex-row md:flex-col gap-8 px-2'> 
         <div className='max-w-[640px]'>
           <Logo/>
           <h1 className='mt-8 text-[2.5rem] font-bold leading-tight'>
@@ -62,7 +62,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-     <img src="/src/assets/code-mockup.png" className='mt-10' alt="" />
+     <img src="/src/assets/code-mockup.png" className='mt-10 xl:p-0  lg:p-0 md: w-11/12 p-2' alt="" />
     </div>
   );
 }

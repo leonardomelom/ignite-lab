@@ -31,8 +31,8 @@ export function PlayerVideo({lessonSlug}: VideoProps){
     </div>
 
     <div className="p-8 max-w-[1100px] mx-auto">
-      <div className="flex items-start gap-16 ">
-        <div className="flex-1">
+      <div className="flex items-start gap-16  2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm: flex-col">
+        <div className="flex-1 ">
           <h1 className="text-2xl font-bold">
           {data.lesson.title}
           </h1>
@@ -52,7 +52,7 @@ export function PlayerVideo({lessonSlug}: VideoProps){
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <a href="#" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+          <a href="#" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors ">
             <DiscordLogo size={24}/>
             Comunidade do Discord</a>
           <a href="#" className="buttonChallenge">
@@ -61,9 +61,9 @@ export function PlayerVideo({lessonSlug}: VideoProps){
          
         </div>
       </div>
-      <div className="gap-8 mt-20 grid grid-cols-2 ">
+      <div className="gap-8 mt-20 grid grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm: grid-cols-1 ">
         <a
-        className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors" 
+        className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors " 
         href=""
         >
            <div className="bg-purple-500 m-4 rounded h-3/4 p-6 flex items-center">
@@ -75,7 +75,7 @@ export function PlayerVideo({lessonSlug}: VideoProps){
               Acesse o material complementar para acelerar seu desenvolvimento!
             </p>
            </div>
-           <div className="h-full p6 flex items-center">
+           <div className="h-full p6 flex items-center 2xl:flex xl:flex lg:flex md:flex sm: hidden">
             <CaretRight size={24}/>
            </div>
         </a>
@@ -93,7 +93,7 @@ export function PlayerVideo({lessonSlug}: VideoProps){
               Acesse o material complementar para acelerar seu desenvolvimento!
             </p>
            </div>
-           <div className="h-full p6 flex items-center">
+           <div className="h-full p6 flex items-center 2xl:flex xl:flex lg:flex md:flex sm: hidden">
             <CaretRight size={24}/>
            </div>
         </a>
